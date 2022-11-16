@@ -1,73 +1,24 @@
 import React from "react";
-import {
-    Image,
-    ScrollView,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View,
-} from "react-native";
+import { Image, ScrollView, Text, View } from "react-native";
 import { styles } from "./styles";
 
-import seta from "../../../assets/seta-esquerda.png";
-import carro from "../../../assets/carro.png";
-import onibus from "../../../assets/onibus.png";
 import bullet from "../../../assets/bullet.png";
 import linha from "../../../assets/linha.png";
 import estrela from "../../../assets/icon-estrela.png";
 import mulherMaravilha from "../../../assets/mulher-maravilha.jpg";
 import batman from "../../../assets/batman.jpg";
 import anime from "../../../assets/anime.jpg";
+import { Botao } from "../../components/Botao/index";
+import { CabecalhoCarona } from "../../components/CabecalhoCarona/index";
 
 import { StatusBar } from "expo-status-bar";
 
 export function Carona() {
-    const clickHandler = () => {
-        alert("Botão Clicado");
-    };
     return (
         <>
             <StatusBar style="auto" backgroundColor={"#fff"} />
             <ScrollView>
-                <View style={styles.cabecalho}>
-                    <View style={styles.busca}>
-                        <View style={styles.posicaoBusca}>
-                            <Image source={seta} style={styles.iconSeta} />
-                            <Text style={styles.textoCardBusca}>
-                                Via Expressa Pres. João Goulart - G... {"->"}{" "}
-                                Cabo Frio RJ
-                            </Text>
-                        </View>
-                        <Text style={styles.textoPassageiro}>
-                            Hoje, 1 passageiro
-                        </Text>
-                    </View>
-                    <View style={styles.transporte}>
-                        <View style={styles.border}>
-                            {/* Tirar a tag text e colocar TouchableOpacity */}
-                            <Text
-                                style={{ fontWeight: "bold", color: "#355E5D" }}
-                            >
-                                Tudo
-                            </Text>
-                            <Text
-                                style={{ fontWeight: "bold", color: "#355E5D" }}
-                            >
-                                18
-                            </Text>
-                        </View>
-                        <View style={styles.displayTransporte}>
-                            {/* Tirar a tag text e colocar TouchableOpacity */}
-                            <Image source={carro} style={styles.iconCarro} />
-                            <Text style={styles.texto}>18</Text>
-                        </View>
-                        <View style={styles.displayTransporte}>
-                            {/* Tirar a tag text e colocar TouchableOpacity */}
-                            <Image source={onibus} style={styles.iconOnibus} />
-                            <Text style={styles.texto}>___</Text>
-                        </View>
-                    </View>
-                </View>
+                <CabecalhoCarona />
                 <View style={styles.body}>
                     <View style={styles.card}>
                         <View style={styles.corrida}>
@@ -362,13 +313,7 @@ export function Carona() {
                 </View>
             </ScrollView>
             <View style={styles.botaoFlutuate}>
-                <TouchableOpacity
-                    activeOpacity={0.7}
-                    onPress={clickHandler}
-                    style={styles.touchableOpacityStyle}
-                >
-                    <Text style={styles.floatingButtonStyle}>Filtros</Text>
-                </TouchableOpacity>
+                <Botao />
             </View>
         </>
     );

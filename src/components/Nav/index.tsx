@@ -8,7 +8,7 @@ import mensagens from "../../../assets/mensagens.png";
 import logoNav from "../../../assets/perfilNav.png";
 
 import oferecer from "../../../assets/oferecer.png";
-import { styles } from "./style";
+import { styles } from "./styles";
 
 export const Navbar = () => {
     return (
