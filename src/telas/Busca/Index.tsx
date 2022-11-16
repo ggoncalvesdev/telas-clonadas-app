@@ -18,13 +18,15 @@ export function Busca({ navigation }) {
         <>
             <StatusBar style="auto" backgroundColor={"#fff"} />
             <Navbar />
-            <ScrollView>
+            <View style={styles.body}>
                 <CardTopo />
-                <View style={styles.body}>
-                    <CardEndereco navigation={navigation} />
-                    <FiltroBusca />
-                </View>
-            </ScrollView>
+                <CardEndereco navigation={navigation} />
+                <ScrollView>
+                    <View>
+                        <FiltroBusca />
+                    </View>
+                </ScrollView>
+            </View>
         </>
     );
 }

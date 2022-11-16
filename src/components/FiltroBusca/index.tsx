@@ -93,6 +93,62 @@ export default function FiltroBusca() {
                     </View>
                     <Text style={styles.textoPassageiro}>1 passageiro</Text>
                 </View>
+                <View style={styles.busca}>
+                    <View style={styles.posicaoBusca}>
+                        <Image
+                            source={iconRelogio}
+                            style={styles.iconRelogio}
+                        />
+                        <Text style={styles.textoCardBusca}>
+                            Cabo Frio, RJ, Brasil {"->"} Rio de Janeiro RJ,
+                            Brasil
+                        </Text>
+                        <Image source={seta} style={styles.iconSeta} />
+                    </View>
+                    <Text style={styles.textoPassageiro}>1 passageiro</Text>
+                </View>
+                <View style={styles.busca}>
+                    <View style={styles.posicaoBusca}>
+                        <Image
+                            source={iconRelogio}
+                            style={styles.iconRelogio}
+                        />
+                        <Text style={styles.textoCardBusca}>
+                            Cabo Frio, RJ, Brasil {"->"} Rio de Janeiro RJ,
+                            Brasil
+                        </Text>
+                        <Image source={seta} style={styles.iconSeta} />
+                    </View>
+                    <Text style={styles.textoPassageiro}>1 passageiro</Text>
+                </View>
+                <View style={styles.busca}>
+                    <View style={styles.posicaoBusca}>
+                        <Image
+                            source={iconRelogio}
+                            style={styles.iconRelogio}
+                        />
+                        <Text style={styles.textoCardBusca}>
+                            Cabo Frio, RJ, Brasil {"->"} Rio de Janeiro RJ,
+                            Brasil
+                        </Text>
+                        <Image source={seta} style={styles.iconSeta} />
+                    </View>
+                    <Text style={styles.textoPassageiro}>1 passageiro</Text>
+                </View>
+                <View style={styles.busca}>
+                    <View style={styles.posicaoBusca}>
+                        <Image
+                            source={iconRelogio}
+                            style={styles.iconRelogio}
+                        />
+                        <Text style={styles.textoCardBusca}>
+                            Cabo Frio, RJ, Brasil {"->"} Rio de Janeiro RJ,
+                            Brasil
+                        </Text>
+                        <Image source={seta} style={styles.iconSeta} />
+                    </View>
+                    <Text style={styles.textoPassageiro}>1 passageiro</Text>
+                </View>
             </View>
         </>
     );

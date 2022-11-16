@@ -8,9 +8,9 @@ export const CardTopo = () => {
     return (
         <View style={styles.topo}>
             <Image source={topo} style={styles.imagemTopo} />
-            <Text style={styles.titulo}>
+            {/* <Text style={styles.titulo}>
                 Viagens com preços baixos {"\n"} para você
-            </Text>
+            </Text> */}
         </View>
     );
 };

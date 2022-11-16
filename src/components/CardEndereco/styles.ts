@@ -13,16 +13,11 @@ export const styles = StyleSheet.create({
     },
     floatingCard: {
         resizeMode: "contain",
+        marginLeft: 10,
         width: 400,
-        height: 50,
+        height: 180,
     },
 
-    input: {
-        backgroundColor: "#ffff",
-        fontSize: 20,
-        padding: Platform.OS === "ios" ? 15 : 10,
-        marginVertical: 10,
-    },
     inputDate: {
         flexDirection: "row",
         justifyContent: "space-between",
